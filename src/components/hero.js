@@ -3,7 +3,7 @@ import heroImage from '@/assets/pattern-bg-desktop.png';
 export default function Hero() {
   return (
     <section
-      className='hero flex flex-col justify-center pt-8 text-2xl'
+      className='hero flex flex-col justify-center pt-8 text-2xl bg-cover h-[30vh]'
       style={{ backgroundImage: `url(${heroImage.src})` }}
     >
       <h1 className='self-center text-(--light-background)'>
