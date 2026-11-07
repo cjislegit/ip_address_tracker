@@ -1,4 +1,7 @@
 import heroImage from '@/assets/pattern-bg-desktop.png';
+import arrowIcon from '@/assets/icon-arrow.svg';
+
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -12,8 +15,8 @@ export default function Hero() {
       </h1>
       <div className='self-center bg-white rounded-md w-140 h-14 flex items-center justify-between'>
         <input type='text' placeholder='Search for any IP address or domain' />
-        <button className='bg-black text-white h-full rounded-r-md'>
-          Search
+        <button className='bg-black text-white h-full rounded-r-md px-6'>
+          <Image src={arrowIcon.src} alt='arrow icon' width={11} height={14} />
         </button>
       </div>
     </section>
