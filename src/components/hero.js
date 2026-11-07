@@ -10,9 +10,11 @@ export default function Hero() {
       <h1 className='self-center text-white font-medium text-4xl'>
         IP Address Tracker
       </h1>
-      <div className='self-center bg-white'>
+      <div className='self-center bg-white rounded-md w-140 h-14 flex items-center justify-between'>
         <input type='text' placeholder='Search for any IP address or domain' />
-        <button>Search</button>
+        <button className='bg-black text-white h-full rounded-r-md'>
+          Search
+        </button>
       </div>
     </section>
   );
