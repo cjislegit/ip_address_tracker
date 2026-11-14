@@ -43,5 +43,5 @@ export default function Map() {
     };
   }, []);
 
-  return <div ref={containerRef} style={{ height: '500px', width: '100%' }} />;
+  return <div ref={containerRef} className='h-full w-full' />;
 }
