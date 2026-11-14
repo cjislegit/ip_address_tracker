@@ -28,10 +28,20 @@ export default function Map() {
           '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
       }).addTo(map);
 
-      new Marker(center)
-        .addTo(map)
-        .bindPopup('<strong>Los Angeles</strong>')
-        .openPopup();
+      //Request the user's location
+      if ('geolocation' in navigator) {
+        navigator.geolocation.getCurrentPosition((position) => {
+          if (cancelled) return;
+
+          const { latitude, longitude } = position.coords;
+          const userLocation = [latitude, longitude];
+
+          new Marker(userLocation)
+            .addTo(map)
+            .bindPopup('<strong>You are here</strong>')
+            .openPopup();
+        });
+      }
     }
 
     initializeMap();
