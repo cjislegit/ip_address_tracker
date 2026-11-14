@@ -1,4 +1,5 @@
 import { Rubik } from 'next/font/google';
+import 'leaflet/styles.css';
 import './globals.css';
 
 const rubik = Rubik({
