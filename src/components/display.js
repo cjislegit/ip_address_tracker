@@ -5,7 +5,7 @@ const Display = () => {
         <div className='displayTitles uppercase text-gray-400 text-sm'>
           Ip Address
         </div>
-        <div className='displayContent text-gray-950 text-2xl font-semibold pt-2'>
+        <div className='displayContent text-gray-950 text-2xl font-semibold pt-2 border-r border-gray-400'>
           146.75.146.41
         </div>
       </div>
