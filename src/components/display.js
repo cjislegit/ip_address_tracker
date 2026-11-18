@@ -5,15 +5,16 @@ const Display = () => {
         <div className='displayTitles uppercase text-gray-400 text-sm'>
           Ip Address
         </div>
-        <div className='displayContent text-gray-950 text-2xl font-semibold pt-2 border-r border-gray-400'>
+        <div className='displayContent text-gray-950 text-2xl font-semibold pt-2'>
           146.75.146.41
         </div>
       </div>
-      <div className='displaySections flex-1'>
-        <div className='displayTitles uppercase text-gray-400 text-sm'>
+      <div className='displaySections flex-1 relative'>
+        <div className='absolute left-0 top-13 h-[75px] w-px -translate-y-1/2 bg-gray-400' />
+        <div className='displayTitles uppercase text-gray-400 text-sm pl-4'>
           Location
         </div>
-        <div className='displayContent text-gray-950 text-2xl font-semibold pt-2'>
+        <div className='displayContent text-gray-950 text-2xl font-semibold pt-2 pl-4'>
           Buena Park, CA
         </div>
       </div>
