@@ -40,7 +40,7 @@ export default function Map() {
             .addTo(map)
             .bindPopup('<strong>You are here</strong>')
             .openPopup();
-          map.setView(userLocation, 13);
+          map.setView(userLocation, 13, { animate: false });
         });
       }
     }
