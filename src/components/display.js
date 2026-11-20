@@ -10,7 +10,7 @@ const Display = () => {
         </div>
       </div>
       <div className='displaySections flex-1 relative'>
-        <div className='absolute left-0 top-13 h-[75px] w-px -translate-y-1/2 bg-gray-400' />
+        <div className='absolute left-0 top-13 h-18.75 w-px -translate-y-1/2 bg-gray-400/50' />
         <div className='displayTitles uppercase text-gray-400 text-sm pl-4'>
           Location
         </div>
@@ -18,17 +18,21 @@ const Display = () => {
           Buena Park, CA
         </div>
       </div>
-      <div className='displaySections flex-1'>
-        <div className='displayTitles uppercase text-gray-400 text-sm'>
+      <div className='displaySections flex-1 relative'>
+        <div className='absolute left-0 top-13 h-18.75 w-px -translate-y-1/2 bg-gray-400/50' />
+        <div className='displayTitles uppercase text-gray-400 text-sm pl-4'>
           Timezone
         </div>
-        <div className='displayContent text-gray-950 text-2xl font-semibold pt-2'>
+        <div className='displayContent text-gray-950 text-2xl font-semibold pt-2 pl-4'>
           UTC -08:00
         </div>
       </div>
-      <div className='displaySections flex-1'>
-        <div className='displayTitles uppercase text-gray-400 text-sm'>ISP</div>
-        <div className='displayContent text-gray-950 text-2xl font-semibold pt-2'>
+      <div className='displaySections flex-1 relative'>
+        <div className='absolute left-0 top-13 h-18.75 w-px -translate-y-1/2 bg-gray-400/50' />
+        <div className='displayTitles uppercase text-gray-400 text-sm pl-4'>
+          ISP
+        </div>
+        <div className='displayContent text-gray-950 text-2xl font-semibold pt-2 pl-4'>
           Comcast
         </div>
       </div>
