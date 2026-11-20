@@ -7,8 +7,13 @@ export default function Home() {
     <div className='h-dvh flex flex-col'>
       <Hero />
       <main className='flex-1 relative'>
-        <Display />
-        <Map />
+        <Display
+          ip='146.75.146.41'
+          location='Brea, CA'
+          timezone='UTC -08:00'
+          isp='Comcast'
+        />
+        <Map lat={34.0522} lng={-118.2437} />
       </main>
     </div>
   );

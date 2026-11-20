@@ -1,4 +1,4 @@
-const Display = () => {
+const Display = ({ ip, location, timezone, isp }) => {
   return (
     <div className='display w-[80vw] h-40 absolute -top-24 left-1/2 -translate-x-1/2 z-1000 bg-white rounded-xl flex justify-between pt-7 pl-7'>
       <div className='displaySections flex-1'>
@@ -6,7 +6,7 @@ const Display = () => {
           Ip Address
         </div>
         <div className='displayContent text-gray-950 text-2xl font-semibold pt-2'>
-          146.75.146.41
+          {ip}
         </div>
       </div>
       <div className='displaySections flex-1 relative'>
@@ -15,7 +15,7 @@ const Display = () => {
           Location
         </div>
         <div className='displayContent text-gray-950 text-2xl font-semibold pt-2 pl-4'>
-          Buena Park, CA
+          {location}
         </div>
       </div>
       <div className='displaySections flex-1 relative'>
@@ -24,7 +24,7 @@ const Display = () => {
           Timezone
         </div>
         <div className='displayContent text-gray-950 text-2xl font-semibold pt-2 pl-4'>
-          UTC -08:00
+          {timezone}
         </div>
       </div>
       <div className='displaySections flex-1 relative'>
@@ -33,7 +33,7 @@ const Display = () => {
           ISP
         </div>
         <div className='displayContent text-gray-950 text-2xl font-semibold pt-2 pl-4'>
-          Comcast
+          {isp}
         </div>
       </div>
     </div>

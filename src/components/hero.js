@@ -17,7 +17,7 @@ export default function Hero() {
         <input
           type='text'
           placeholder='Search for any IP address or domain'
-          className='w-full focus:outline-none focus: ring-0'
+          className='w-full focus:outline-none focus:ring-0'
         />
         <button className='bg-black text-white h-full rounded-r-lg px-6'>
           <Image src={arrowIcon.src} alt='arrow icon' width={11} height={14} />
